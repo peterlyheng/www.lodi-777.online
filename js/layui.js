@@ -7600,7 +7600,7 @@ layui.define(function (e) {
         text: "text/plain",
         html: "text/html",
         xml: "application/xml, text/xml",
-        json: "application/json, text/javascript",
+        json: "applicationjson, text/javascript",
       },
       contents: { xml: /\bxml\b/, html: /\bhtml/, json: /\bjson\b/ },
       responseFields: {
@@ -14196,7 +14196,7 @@ layui.define(["laytpl", "laypage", "layer", "form", "util"], function (e) {
         (r[l.pageName] = e), (r[l.limitName] = a.limit);
         var c = t.extend(r, a.where);
         a.contentType &&
-          0 == a.contentType.indexOf("application/json") &&
+          0 == a.contentType.indexOf("applicationjson") &&
           (c = JSON.stringify(c)),
           i.loading(),
           t.ajax({

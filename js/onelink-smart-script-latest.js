@@ -2127,7 +2127,7 @@ function QRCode() {
             dw,
             dh
           ) {
-            if ("nodeName" in image && /img/i.test(image.nodeName)) {
+            if ("nodeName" in image && img/i.test(image.nodeName)) {
               for (var i = arguments.length - 1; i >= 1; i--) {
                 arguments[i] = arguments[i] * factor;
               }
